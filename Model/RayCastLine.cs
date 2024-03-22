@@ -1,6 +1,6 @@
 ﻿using SampSharp.GameMode;
 
-namespace SampSharp.ColAndreas.RayCast
+namespace SampSharp.ColAndreas.Model
 {
     public class RayCastLine
     {
