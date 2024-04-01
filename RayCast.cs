@@ -1,5 +1,4 @@
-﻿using SampSharp.ColAndreas.Definitions;
-using SampSharp.ColAndreas.Model;
+﻿using SampSharp.ColAndreas.Model;
 using SampSharp.GameMode;
 
 namespace SampSharp.ColAndreas
@@ -12,9 +11,6 @@ namespace SampSharp.ColAndreas
             
             if(result == 0)
                 return Model.RayCastLine.NoCollisionPoint;
-            
-            if(result == Constants.WATER_OBJECT)
-                return new RayCastLine(new Vector3(x, y, z));
 
             return new RayCastLine(new Vector3(x, y, z), result);
         }   
