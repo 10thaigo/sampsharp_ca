@@ -1,4 +1,5 @@
-﻿using SampSharp.GameMode;
+﻿using SampSharp.ColAndreas.Definitions;
+using SampSharp.GameMode;
 
 namespace SampSharp.ColAndreas.Model
 {
@@ -19,5 +20,7 @@ namespace SampSharp.ColAndreas.Model
         {
             Model = model;
         }
+
+        public bool CollidedInWater() => Model == Constants.WATER_OBJECT;
     }
 }
